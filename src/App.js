@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   const [page, setPage] = useState('About');
-
+  console.log(page);
   const renderPage = () => {
     if (page === 'Portfolio') {
       return <Portfolio />;
@@ -29,7 +29,6 @@ const App = () => {
         <div className="text-end">
           <div className="mx-3 p-3"> Ben Liu</div>
         </div>
-
         <Navigation currentPage={page} setCurrent={setPage} />
       </Header>
       {renderPage()}

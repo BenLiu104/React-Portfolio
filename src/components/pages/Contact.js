@@ -17,7 +17,8 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [confirm, setConfirm] = useState('');
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     if (!username) {
       return setErrorMsg('Please input a name');
     }
@@ -27,6 +28,9 @@ export default function Contact() {
     if (!message) {
       return setErrorMsg('Please input the messages');
     }
+    setMessage('');
+    setEmail('');
+    setUsername('');
     setConfirm('Successfully receive your message!');
     setErrorMsg('');
   };
@@ -42,6 +46,7 @@ export default function Contact() {
           type="text"
           className="form-control"
           id="userName"
+          value={username}
           data-bs-toggle="popover"
           data-bs-trigger="hover focus"
           data-bs-content="This field is required!"
@@ -54,6 +59,7 @@ export default function Contact() {
         <input
           onChange={(e) => setEmail(e.target.value)}
           type="email"
+          value={email}
           className="form-control"
           id="InputEmail1"
           data-bs-toggle="popover"
