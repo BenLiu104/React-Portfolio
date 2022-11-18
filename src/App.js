@@ -27,12 +27,12 @@ const App = () => {
     <div>
       <Header>
         <div className="text-end">
-          <div className="m-3"> Ben Liu</div>
+          <div className="mx-3 p-3"> Ben Liu</div>
         </div>
 
         <Navigation currentPage={page} setCurrent={setPage} />
-        {renderPage()}
       </Header>
+      {renderPage()}
       <Footer />
     </div>
   );
