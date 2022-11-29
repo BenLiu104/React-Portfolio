@@ -3,9 +3,16 @@ import Project from '../Project';
 
 import project1 from '../../images/project1.png';
 import project2 from '../../images/project2.png';
+import project3 from '../../images/project3.png';
 
 export default function Portfolio() {
   const projects = [
+    {
+      title: 'Will B Hangry - Burger shop',
+      url: 'https://will-b-hangry.herokuapp.com',
+      image: project3,
+      Repo: 'https://github.com/hannahhue/will-b-hangry',
+    },
     {
       title: 'Flight Searching',
       url: 'https://benliu104.github.io/Project01-FlightPlanner/',

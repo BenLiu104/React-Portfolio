@@ -9,7 +9,7 @@ export default function Contact() {
     const popoverList = [...popoverTriggerList].map(
       (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
     );
-  });
+  }, []);
 
   const [message, setMessage] = useState('');
   const [username, setUsername] = useState('');
@@ -28,6 +28,7 @@ export default function Contact() {
     if (!message) {
       return setErrorMsg('Please input the messages');
     }
+
     setMessage('');
     setEmail('');
     setUsername('');
