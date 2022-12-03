@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.c59cc657.css",
-    "main.js": "/react-portfolio/static/js/main.5908522d.js",
+    "main.css": "/react-portfolio/static/css/main.c55a6a7b.css",
+    "main.js": "/react-portfolio/static/js/main.44bd911e.js",
     "static/media/project2.png": "/react-portfolio/static/media/project2.ab51cdda3f2c838eb140.png",
     "static/media/project3.png": "/react-portfolio/static/media/project3.2a274123d6402ef4a34c.png",
     "static/media/project1.png": "/react-portfolio/static/media/project1.6ebc247fa2f405decec2.png",
     "static/media/avatar.jpeg": "/react-portfolio/static/media/avatar.9c8eae8dc34e08af2a37.jpeg",
-    "static/media/CV with WEB (LIU MAN PAN) 2022 - CA .pdf": "/react-portfolio/static/media/CV with WEB (LIU MAN PAN) 2022 - CA .7e1119bcdb0815bb123c.pdf",
+    "static/media/CV with WEB (LIU MAN PAN) 2022 - CA .pdf": "/react-portfolio/static/media/CV with WEB (LIU MAN PAN) 2022 - CA .97b6ec645043df4c7dfc.pdf",
     "static/media/headerImg.jpg": "/react-portfolio/static/media/headerImg.b6ac692a0269b4221002.jpg",
     "index.html": "/react-portfolio/index.html",
     "static/media/twitter.svg": "/react-portfolio/static/media/twitter.db226d55c343637e1371fc247b144b51.svg",
-    "main.c59cc657.css.map": "/react-portfolio/static/css/main.c59cc657.css.map",
-    "main.5908522d.js.map": "/react-portfolio/static/js/main.5908522d.js.map"
+    "main.c55a6a7b.css.map": "/react-portfolio/static/css/main.c55a6a7b.css.map",
+    "main.44bd911e.js.map": "/react-portfolio/static/js/main.44bd911e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c59cc657.css",
-    "static/js/main.5908522d.js"
+    "static/css/main.c55a6a7b.css",
+    "static/js/main.44bd911e.js"
   ]
 }
