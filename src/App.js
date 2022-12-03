@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Navigation from './components/Navigation';
 import About from './components/pages/About';
-import Contact from './components/pages/Contact';
 import Portfolio from './components/pages/Portfolio';
 import Resume from './components/pages/Resume';
 import Header from './components/Header';
@@ -14,13 +13,11 @@ const App = () => {
     if (page === 'Portfolio') {
       return <Portfolio />;
     }
-    if (page === 'About') {
-      return <About />;
-    }
     if (page === 'Resume') {
       return <Resume />;
+    } else {
+      return <About />;
     }
-    return <Contact />;
   };
 
   return (

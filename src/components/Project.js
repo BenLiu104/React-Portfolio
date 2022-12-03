@@ -1,6 +1,6 @@
 import React from 'react';
 import githubIcon from '../images/github-sign.png';
-
+import './pages/Portfolio.css';
 export default function Project({ title, url, image, Repo }) {
   const style = {
     width: '100%',
@@ -10,7 +10,7 @@ export default function Project({ title, url, image, Repo }) {
 
   return (
     <div className="col p-4">
-      <div className="card">
+      <div className="card custom-project">
         <img
           src={image}
           className="card-img-top border"
@@ -21,10 +21,20 @@ export default function Project({ title, url, image, Repo }) {
           <h4 className="card-title">{title}</h4>
           {/* <p className="card-text">Go to Application</p> */}
           <div className="text-end">
-            <a href={url} className="card-text">
+            <a
+              href={url}
+              className="card-text"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>Go to Application</span>
             </a>
-            <a href={Repo} className="card-text mx-3">
+            <a
+              href={Repo}
+              className="card-text mx-3"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={githubIcon} alt="" width="20px"></img>
             </a>
           </div>

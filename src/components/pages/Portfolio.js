@@ -14,16 +14,16 @@ export default function Portfolio() {
       Repo: 'https://github.com/hannahhue/will-b-hangry',
     },
     {
+      title: 'Your Store - Online close Store',
+      url: 'https://your-store-jibstudios.herokuapp.com/',
+      image: project2,
+      Repo: 'https://github.com/Iva416/yourStore',
+    },
+    {
       title: 'Flight Searching',
       url: 'https://benliu104.github.io/Project01-FlightPlanner/',
       image: project1,
       Repo: 'https://github.com/BenLiu104/Project01-FlightPlanner',
-    },
-    {
-      title: 'Online Store',
-      url: 'https://your-store-jibstudios.herokuapp.com/',
-      image: project2,
-      Repo: 'https://github.com/Iva416/yourStore',
     },
     {
       title: 'Code Quiz',
