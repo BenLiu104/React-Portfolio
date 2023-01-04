@@ -14,8 +14,8 @@ export default function Portfolio() {
       Repo: 'https://github.com/hannahhue/will-b-hangry',
     },
     {
-      title: 'Your Store - Online close Store',
-      url: 'https://your-store-jibstudios.herokuapp.com/',
+      title: 'Your Store - Online clothes Store',
+      url: 'https://your-store-01.herokuapp.com',
       image: project2,
       Repo: 'https://github.com/Iva416/yourStore',
     },

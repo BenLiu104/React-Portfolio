@@ -21,10 +21,10 @@ export default function Footer(props) {
         </a>
       </div>
       <div
-        className="text-center p-3"
+        className="text-center p-3 mt-2"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
       >
-        © 2022 Copyright:
+        © {new Date().getFullYear()} Copyright
       </div>
     </footer>
   );

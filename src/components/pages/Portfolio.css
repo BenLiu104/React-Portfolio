@@ -1,3 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&family=Permanent+Marker&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+
 .custom-project:hover {
-box-shadow: 10px 5px 5px black;
+  box-shadow: 10px 5px 5px black;
+}
+
+.introduction {
+  padding: 0 10rem;
+  font-family: 'Marvel', sans-serif;
+  font-size: large;
+}
+
+.intro-heading {
+  font-family: 'Permanent Marker', cursive;
+  margin: 3rem 0;
+}
+.profile-picture {
+  width: 100%;
+  margin: 4rem auto;
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    padding: 0 6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-heading {
+    margin: 1rem 0;
+  }
+  .introduction {
+    padding: 0 2rem;
+  }
+  .profile-picture {
+    width: 60%;
+    margin: 1rem auto;
+  }
+  .pic-container {
+    display: flex;
+    justify-content: center;
+  }
 }
