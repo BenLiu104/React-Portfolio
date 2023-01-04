@@ -1,7 +1,7 @@
 import React from 'react';
 import githubIcon from '../images/github-sign.png';
 import './pages/Portfolio.css';
-export default function Project({ title, url, image, Repo }) {
+export default function Project({ title, url, image, Repo, Skills }) {
   const style = {
     width: '100%',
     height: '20rem',
@@ -19,7 +19,7 @@ export default function Project({ title, url, image, Repo }) {
         />
         <div className="card-body">
           <h4 className="card-title">{title}</h4>
-          {/* <p className="card-text">Go to Application</p> */}
+          <p className="card-text">Skills: {Skills}</p>
           <div className="text-end">
             <a
               href={url}
