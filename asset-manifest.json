@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.ddfbaab9.css",
-    "main.js": "/react-portfolio/static/js/main.3a8d9620.js",
+    "main.js": "/react-portfolio/static/js/main.7c86dad9.js",
     "static/media/project2.png": "/react-portfolio/static/media/project2.ab51cdda3f2c838eb140.png",
     "static/media/project3.png": "/react-portfolio/static/media/project3.2a274123d6402ef4a34c.png",
     "static/media/project1.png": "/react-portfolio/static/media/project1.6ebc247fa2f405decec2.png",
     "static/media/avatar.jpeg": "/react-portfolio/static/media/avatar.9c8eae8dc34e08af2a37.jpeg",
     "static/media/CV with WEB (LIU MAN PAN) 2022 - CA .pdf": "/react-portfolio/static/media/CV with WEB (LIU MAN PAN) 2022 - CA .88a8d9b54e84bb55d200.pdf",
+    "static/media/email-icon.png": "/react-portfolio/static/media/email-icon.c3bc353f5b21f15ab0cb.png",
     "static/media/headerImg.jpg": "/react-portfolio/static/media/headerImg.b6ac692a0269b4221002.jpg",
     "index.html": "/react-portfolio/index.html",
     "static/media/twitter.svg": "/react-portfolio/static/media/twitter.db226d55c343637e1371fc247b144b51.svg",
     "main.ddfbaab9.css.map": "/react-portfolio/static/css/main.ddfbaab9.css.map",
-    "main.3a8d9620.js.map": "/react-portfolio/static/js/main.3a8d9620.js.map"
+    "main.7c86dad9.js.map": "/react-portfolio/static/js/main.7c86dad9.js.map"
   },
   "entrypoints": [
     "static/css/main.ddfbaab9.css",
-    "static/js/main.3a8d9620.js"
+    "static/js/main.7c86dad9.js"
   ]
 }
