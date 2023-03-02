@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from '../../files/CV with WEB (LIU MAN PAN) 2022 - CA .pdf';
+import CV from '../../files/Resume - Ben LIU v2.pdf';
 
 export default function Resume() {
   return (
