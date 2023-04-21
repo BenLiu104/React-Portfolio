@@ -3,26 +3,52 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
+# Set variables once
+variables:
+  - name: System.Debug
+    value: true
+
 trigger:
 - azure-piplines
 
 pool: 
   name: self-agent
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSource: 'spec'
-    versionSpec: '16.x'
-  displayName: 'Install Node.js'
+jobs:
+  - job: prep_and_build
+    displayName: prepare environment and build
+    steps:
+    - task: NodeTool@0
+      inputs:
+        versionSource: 'spec'
+        versionSpec: '16.x'
+      displayName: 'Install Node.js'
 
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
-  
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: './build'
-    ArtifactName: 'potfolio-art'
-    publishLocation: 'Container'
+    - script: |
+        npm install
+        npm run build
+      displayName: 'npm install and build'
+      
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: './build'
+        ArtifactName: 'potfolio-art'
+        publishLocation: 'Container'
+  - job: echo_job
+    steps:
+    - task: CmdLine@2
+      inputs:
+        script: |
+          echo this is just a test
+          
+          echo Hello world
+
+  - job: clean_up
+    displayName: clean the source code
+    dependsOn: [prep_and_build,echo_job]
+    condition: always
+    steps:
+      - task: DeleteFiles@1
+        inputs:
+          SourceFolder: '$(System.DefaultWorkingDirectory)'
+          Contents: '*'
