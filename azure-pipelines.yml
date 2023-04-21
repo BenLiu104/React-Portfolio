@@ -6,8 +6,8 @@
 trigger:
 - azure-piplines
 
-pool:
-  vmImage: ubuntu-latest
+pool: 
+  name: self-agent
 
 steps:
 - task: NodeTool@0
