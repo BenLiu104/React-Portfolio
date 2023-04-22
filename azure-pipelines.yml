@@ -28,8 +28,11 @@ stages:
 
       - script: |
           npm install
+        displayName: 'install dependency'
+      
+      - script: |
           npm run build
-        displayName: 'npm install and build'
+        displayName: 'build the project'
         
       - task: PublishBuildArtifacts@1
         inputs:
